@@ -29,7 +29,7 @@ function unityShowBanner(msg, type) {
   updateBannerVisibility();
 }
 
-var buildUrl = "Build";
+var buildUrl = "/webglElements/Build";
 var loaderUrl = buildUrl + "/WebGl.loader.js";
 var config = {
   dataUrl: buildUrl + "/WebGl.data",
