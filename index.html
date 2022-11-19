@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = "en-GB">
+<!-- This is a comment-->
+
+    <header charset = "UTF-8">
+        <meta name="author" content="Pottow">
+        <meta name="description" content = "A portfolio of my projects.">
+        <link rel="icon" href="images/drizzleIcon.png" type = "image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="TemplateData/style.css">
+        <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    </header>
+
+
+    <body>
+        <bigGrid class="grid-container">
+
+
+
+
+        <navbarColour class="navbarColour" style="border: 1px dashed;">
+        </navbarColour>
+
+            <logo class="logo" >
+                <a href = "https://pottow.github.io/website/">
+                <img  src = "images/drizzleIcon.png" width = "50" height = "50">
+                </a>
+            </logo>
+            
+            <pageTitle class="pageTitle">            
+                    <h1>Pottow's Place</h1>
+                    <!-- <a id = "websiteSelfLink" href = "https://pottow.github.io/website/">Websiteception</a>
+                    <br>
+                    <button id = "executeFirstFunction" type="button" onclick = "FirstFunction()" width = "50" height = "50" >ExecuteScript</button> 
+                    <script src="editor.js"></script>   -->
+            </pageTitle>
+            
+
+
+
+
+
+
+            <section_1_text class="section_1_text">
+                <h2>Thesis Project</h2>               
+               
+                <p style = "width: 1fr">
+                My thesis was a driving simulation experiment made in Unity. It tested time-to-collision (TTC) theories and steering laws, when approaching gates of variable width. 
+                The time it took each participant to complete the course was modelled using Accot and Zhai's Steering Law. The changing angle between the left gatepost,
+                the driver's eyeline, and the right gatepost at each instant was used as input for David Lee's TTC theory.
+                </p>
+
+                <p style = "width: 1fr">
+                The trial consisted of a total of fourty four very similar levels. The driver had to navigate an unruly car through a straight track. 
+                The levels could be seperated into three types, no obstacles, one gate, and five gates. To create different variations on these three
+                level types, the width of the track and gates were altered randomly in width. 
+                </p>
+
+                <p style = "width: 1fr">
+                The speed, time, braking, and visual angle to the gate, at each instant, was recorded for each participant. This data allowed us to compare how similar 
+                linear tracks could yield different travel times, despite having equivalent difficulty values according to the Steering Law. 
+                </p>
+
+                <img  src = "images/TTCTheory.png" style=  "display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;">
+
+                <p style = "width: 1fr"></p>
+                The TTC section of the experiment 
+                used the visual angle between the driver and the gates to assess whether people react to a gate or opening in the same way that they would react to being on
+                a collision course with a physical obstacle. The aim was to analyse whether their braking pattern when approaching the gate was comparable to the expected 
+                approach towards a physical obstacle like a wall.
+              </p>
+
+            </section_1_text>
+
+            <section_1_graphic class = "section_1_graphic">
+              <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  
+              src="https://pottow.github.io/HostingSteeringExperiment/" 
+              style="height:640px;width:1000px;border:none;overflow:hidden;" name="Thesis WebGL" 
+              scrolling="no" msallowfullscreen="true" allowfullscreen="true" 
+              onload='javascript:(function(embedWebgl){embedWebgl.style.height=embedWebgl.contentWindow.document.body.scrollHeight+"px";}(this));' 
+              webkitallowfullscreen="true" allowtransparency="true" 
+              frameborder="0">
+              </iframe>
+            </section_1_graphic>
+          
+
+
+
+
+
+
+
+
+            <section_2_text class = "section_2_text">
+            <h2>Discord Music Bot</h2>       
+               
+            <p style = "width: 1fr">
+            Botress is a bot for playing music over voice chat on Discord. It was coded in python using the discord.py API. The bot is 
+            controlled via a GUI on the host's computer. Playlists/genres can be selected from a directory and played on shuffle.
+            </p>
+
+            <br>
+            <a href = "https://pottow.github.io/website/">
+              <img  src = "images/BotressInVoice.PNG"
+              style=" grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 2;
+            grid-column-end: 2;">
+          </a> 
+          <a href = "https://pottow.github.io/website/">
+            <img  src = "images/BotressOnline.PNG"
+            style=" grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 1;">
+          </a> 
+
+            </section_2_text>  
+
+
+
+            <section_2_graphic class = "section_2_graphic">
+          
+
+              <a href = "https://pottow.github.io/website/">
+                <img  src = "images/BotressControlPanel.PNG"  style=" grid-row-start: 2;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 1;">
+              </a>     
+                 
+            </section_2_graphic>  
+            
+
+
+
+
+
+            
+        </bigGrid>
+
+    </body>
+
+
+</html>
