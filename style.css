@@ -43,14 +43,16 @@ body{
 }
 
 .section_1_text{
+    margin-left: 0.5cm;
     grid-row: 4;
     grid-column-start: 2;
     grid-column-end: 9;
-    margin-left: 0.5cm;
+ 
    /*  background-color: rgb(26, 24, 37); */
 }
 
 .section_1_graphic{
+    margin-left: 0.5cm;
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 9;
