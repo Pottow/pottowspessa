@@ -28,6 +28,14 @@ BotressOnline = document.getElementById("BotressOnline");
 BotressOnline.height = window.innerHeight /13.6;
 BotressOnline.width = window.innerWidth /8.06;
 
+RandomCimNames = document.getElementById("RandomCimNames");
+RandomCimNames.height = window.innerHeight /3.5;
+RandomCimNames.width = window.innerWidth /2.5;
+
+RandomCimNames = document.getElementById("TTCTheory");
+RandomCimNames.height = window.innerHeight /6.4;
+RandomCimNames.width = window.innerWidth /2.5;
+
 
 }
 

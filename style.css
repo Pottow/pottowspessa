@@ -61,10 +61,10 @@ body{
 }
 
 .section_2_text{
+    margin-left: 0.5cm;
     grid-row: 10;
     grid-column-start: 11;
-    grid-column-end: 19;
-    margin-left: 0.5cm;
+    grid-column-end: 19;   
    /*  background-color: rgb(26, 24, 37); */
 }
 
@@ -75,5 +75,22 @@ body{
    /*  background-color: rgb(26, 24, 37); */
 }
 
+.section_3_text{
+    margin-left: 1.5cm;
+    grid-row: 14;
+    grid-column-start: 2;
+    grid-column-end: 11;
+   /*  background-color: rgb(26, 24, 37); */
+}
+
+.section_3_graphic{
+    margin-left: 0.5cm;
+    margin-top: 1.5cm;
+    grid-row: 14;
+    grid-column-start: 11;
+    grid-column-end: 19;
+
+   /*  background-color: rgb(26, 24, 37); */
+}
 
 
