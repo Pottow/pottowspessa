@@ -62,7 +62,7 @@ function ifMobile(){
                 $(".section_2_graphic").css("grid-row-start","5");
                 $(".section_2_graphic").css("grid-row-end","6");
                 $(".section_2_graphic").css("text-align","center");
-                $(".section_2_graphic").css("aspect-ratio","1/1");
+                $(".section_2_graphic").css("display","flex");
 
                 $(".section_3_text").css("margin-left","0cm");
                 $(".section_3_text").css("grid-column-start","1");
@@ -137,7 +137,7 @@ function scaleImages(){
     RandomCimNames = document.getElementById("RandomCimNames");
     
 
-    if (window.innerWidth < 500 || window.innerWidth < window.innerHeight ){
+    if (screen.width < 500 || screen.width  < screen.height ){
         ifMobile();
     }
     else{
