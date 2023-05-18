@@ -7,28 +7,26 @@ body{
     grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
     grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%; 
     /* 20 columns */
-    /* gap: 10px; */
     grid-row-gap: 10px; 
     padding: 10px; 
-    /* grid-auto-rows: minmax(10px, 100px);   */
 }
 
 
 .navbarColour{
     background-image: url("images/backgroundTileDark.png"); 
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 21;
 }
 
 .logo{
-    position: relative;
+    position: sticky;
+    top: 10px;
     margin: auto;
-    top: 0;
+    /* top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     grid-row: 1;
     grid-column: 1;
     /* background-color: brown; */
@@ -48,7 +46,7 @@ body{
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 9;
- 
+    width: 1fr;
    /*  background-color: rgb(26, 24, 37); */
 }
 
@@ -58,6 +56,8 @@ body{
     grid-row-end: 5;
     grid-column-start: 9;
     grid-column-end: 20;
+    display: flex;
+
    /*  background-color: rgb(26, 24, 37); */
 }
 
@@ -66,6 +66,7 @@ body{
     grid-row: 10;
     grid-column-start: 11;
     grid-column-end: 19;   
+    width: 1fr;
    /*  background-color: rgb(26, 24, 37); */
 }
 
@@ -81,6 +82,7 @@ body{
     grid-row: 15;
     grid-column-start: 2;
     grid-column-end: 11;
+    width: 1fr;
    /*  background-color: rgb(26, 24, 37); */
 }
 

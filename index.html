@@ -8,6 +8,7 @@
         <meta name="viewport" content = "width= device-width, initial-scale=1">
         <link rel="icon" href="images/drizzleIcon.png" type = "image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     </header>
 
 
@@ -22,7 +23,7 @@
 
             <logo class="logo" >
                 <a href = "https://github.com/Pottow">
-                <img  src = "images/drizzleIcon.png" width = "50" height = "50">
+                <img  id="LogoGraphic" src = "images/drizzleIcon.png" width = "50" height = "50">
                 </a>
             </logo>
             
@@ -40,19 +41,19 @@
             <section_1_text class="section_1_text">
                 <h2>Thesis Project</h2>               
                
-                <p style = "width: 1fr">
+                <p >
                 My thesis was a driving simulation experiment made in Unity. It tested time-to-collision (TTC) theories and steering laws, when approaching gates of variable width. 
                 The time it took each participant to complete the course was modelled using Accot and Zhai's Steering Law. The changing angle between the left gatepost,
                 the driver's eyeline, and the right gatepost at each instant was used as input for David Lee's TTC theory.
                 </p>
 
-                <p style = "width: 1fr">
+                <p>
                 The trial consisted of a total of fourty four very similar levels. The driver had to navigate an unruly car through a straight track. 
                 The levels could be seperated into three types, no obstacles, one gate, and five gates. To create different variations on these three
                 level types, the width of the track and gates were altered randomly in width. 
                 </p>
 
-                <p style = "width: 1fr">
+                <p>
                 The speed, time, braking, and visual angle to the gate, at each instant, was recorded for each participant. This data allowed us to compare how similar 
                 linear tracks could yield different travel times, despite having equivalent difficulty values according to the Steering Law. 
                 </p>
@@ -62,7 +63,7 @@
                 margin-right: auto;
                 width: 60%;">
 
-                <p style = "width: 1fr"></p>
+                <p>
                 The TTC section of the experiment 
                 used the visual angle between the driver and the gates to assess whether people react to a gate or opening in the same way that they would react to being on
                 a collision course with a physical obstacle. The aim was to analyse whether their braking pattern when approaching the gate was comparable to the expected 
@@ -72,10 +73,10 @@
             </section_1_text>
 
             <section_1_graphic class = "section_1_graphic">
-              <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen"  
+              <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen" 
               src="https://pottow.github.io/HostingSteeringExperiment/" 
               style="border:none;overflow:hidden;"
-              scrolling="no" msallowfullscreen="true" allowfullscreen="true"    
+              scrolling="yes" msallowfullscreen="true" allowfullscreen="true"    
               webkitallowfullscreen="true" allowtransparency="true" 
               frameborder="0">
               </iframe>
@@ -91,7 +92,7 @@
             <section_2_text class = "section_2_text">
             <h2>Discord Music Bot</h2>       
                
-            <p style = "width: 1fr">
+            <p>
             Botress is a bot for playing music over voice chat on Discord. It was coded in python using the discord.py API. The bot is 
             controlled via a GUI on the host's computer. Playlists/genres can be selected from a directory and played on shuffle.
             </p>
@@ -114,8 +115,6 @@
 
             </section_2_text>  
 
-
-
             <section_2_graphic class = "section_2_graphic">
         
               <a href = "https://github.com/Pottow/Botress">
@@ -134,14 +133,14 @@
           <section_3_text class = "section_3_text">
             <h2>Random Name Generator</h2>       
                
-            <p style = "width: 1fr">
+            <p>
             RandomCimNames is a unique name generator, coded in Go. Rather than using existing names, it instead creates a name and surname by applying an 
             onomastic ruleset to words imported from a dictionary. At some point in the future, I would like to use a machine learning algorithm to tune the 
             quality of names or cater them towards specific genres, such as fantasy or sci-fi.
             </p>
-            <p style = "width: 1fr">
+            <p id="ExampleNamesListIntro">
               Example names include: 
-              <ul>
+              <ul id="ExampleNamesList">
                 <li>Welki Muckspreader</li>
                 <li>Undicid Joint</li>
                 <li>Traun Aftabo</li>
@@ -170,7 +169,7 @@
                  
             </section_3_graphic>  
 
- 
+
             <script src="editor.js"></script>
         </bigGrid>
 
