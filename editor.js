@@ -137,7 +137,8 @@ function scaleImages(){
     RandomCimNames = document.getElementById("RandomCimNames");
     
 
-    if (document.documentElement.clientWidth < 500 || document.documentElement.clientWidth < document.documentElement.clientHeight ){
+    if (document.documentElement.clientWidth < 800 || document.documentElement.clientWidth < document.documentElement.clientHeight
+        || navigator.userAgent.indexOf("Mobi") > -1){
         ifMobile();
     }
     else{
