@@ -10,6 +10,7 @@ embedWebgl.style.height=embedWebgl.contentWindow.document.body.scrollHeight+"px"
 
 function ifMobile(){
                 $(".grid-container").css("grid-template-columns","50% 50%");
+                $(".grid-container").css("grid-template-rows","auto");
                 $(".grid-container").css("padding","10px");
 
                 $(".pageTitle").css("grid-column-start","1");
@@ -43,6 +44,7 @@ function ifMobile(){
                 $(".section_1_graphic").css("flex-wrap","wrap");
                 $(".section_1_graphic").css("flex-basis","10%");
                 $(".section_1_graphic").css("align-items","center");
+                $(".section_1_graphic").css("display","flex");
         
     
                 $(".section_2_text").css("margin-left","0cm");
@@ -60,6 +62,7 @@ function ifMobile(){
                 $(".section_2_graphic").css("grid-row-start","5");
                 $(".section_2_graphic").css("grid-row-end","6");
                 $(".section_2_graphic").css("text-align","center");
+                $(".section_2_graphic").css("aspect-ratio","1/1");
 
                 $(".section_3_text").css("margin-left","0cm");
                 $(".section_3_text").css("grid-column-start","1");
@@ -82,6 +85,7 @@ function ifMobile(){
                 $(".section_3_graphic").css("position","relative");
                 $(".section_3_graphic").css("margin","0cm");
                 $(".section_3_graphic").css("text-align","center");
+                $(".section_3_graphic").css("display","flex");
 
                 thesisWebGL = document.getElementById("thesisWebGL");
                 TTCTheory = document.getElementById("TTCTheory");
@@ -94,22 +98,27 @@ function ifMobile(){
              
                 thesisWebGL.width = 0;
                 thesisWebGL.height = 0;
+                // thesisWebGL.remove();
 
-                TTCTheory.height = window.innerHeight /8.4;
+                // TTCTheory.height = window.innerHeight /12;
                 TTCTheory.width = window.innerWidth /2.5;
            
-                BotressControlPanel.height = window.innerHeight /3.9;
-                BotressControlPanel.width = window.innerWidth /1.06;
+                // BotressControlPanel.height = window.innerHeight /6;
+                BotressControlPanel.width = window.innerWidth /1.0;
            
                 // BotressInVoice.height = window.innerHeight /9;
                 // BotressInVoice.width = window.innerWidth /1.85;
-                BotressInVoice.remove();
+                BotressInVoice.height = 0;
+                BotressInVoice.width = 0;
+                // BotressInVoice.remove();
            
                 // BotressOnline.height = window.innerHeight /15.6;
                 // BotressOnline.width = window.innerWidth /2.06;
-                BotressOnline.remove();
+                BotressOnline.height = 0;
+                BotressOnline.width = 0;
+                // BotressOnline.remove();
            
-                RandomCimNames.height = window.innerHeight /6.5;
+                // RandomCimNames.height = window.innerHeight /6.5;
                 RandomCimNames.width = window.innerWidth /1.1;
 
                 if (window.innerWidth <= 390){
