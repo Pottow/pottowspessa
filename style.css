@@ -57,6 +57,7 @@ body{
     grid-column-start: 9;
     grid-column-end: 20;
     display: flex;
+    
 
    /*  background-color: rgb(26, 24, 37); */
 }

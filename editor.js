@@ -54,6 +54,7 @@ function ifMobile(){
                 $(".section_2_text").css("text-align","center");
 
                 $(".section_2_graphic").css("margin-left","0cm");
+                $(".section_2_graphic").css("margin-top","-30px");
                 $(".section_2_graphic").css("grid-column-start","1");
                 $(".section_2_graphic").css("grid-column-end","3");
                 $(".section_2_graphic").css("grid-row-start","5");
@@ -91,22 +92,24 @@ function ifMobile(){
                 LogoGraphic = document.getElementById("LogoGraphic");
                 
              
-                thesisWebGL.width = window.innerWidth /1.2;
-                thesisWebGL.height = window.innerHeight /3;
+                thesisWebGL.width = 0;
+                thesisWebGL.height = 0;
 
-                // TTCTheory.height = window.innerHeight /6.4;
+                TTCTheory.height = window.innerHeight /8.4;
                 TTCTheory.width = window.innerWidth /2.5;
            
-                // BotressControlPanel.height = window.innerHeight /2.34;
+                BotressControlPanel.height = window.innerHeight /3.9;
                 BotressControlPanel.width = window.innerWidth /1.06;
            
-                BotressInVoice.height = window.innerHeight /9;
-                // BotressInVoice.width = window.innerWidth /7.85;
+                // BotressInVoice.height = window.innerHeight /9;
+                // BotressInVoice.width = window.innerWidth /1.85;
+                BotressInVoice.remove();
            
-                BotressOnline.height = window.innerHeight /13.6;
-                // BotressOnline.width = window.innerWidth /8.06;
+                // BotressOnline.height = window.innerHeight /15.6;
+                // BotressOnline.width = window.innerWidth /2.06;
+                BotressOnline.remove();
            
-                // RandomCimNames.height = window.innerHeight /3.5;
+                RandomCimNames.height = window.innerHeight /6.5;
                 RandomCimNames.width = window.innerWidth /1.1;
 
                 if (window.innerWidth <= 390){
@@ -154,4 +157,5 @@ function scaleImages(){
 }
 
 
-window.onload = scaleImages();
+window.onload = scaleImages;
+window.onresize = scaleImages;
