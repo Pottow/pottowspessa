@@ -138,7 +138,7 @@ function scaleImages(){
     
 
     if (document.documentElement.clientWidth < 800 || document.documentElement.clientWidth < document.documentElement.clientHeight
-        || navigator.userAgent.indexOf("Mobi") > -1){
+        || navigator.userAgent.indexOf("Mobi") > -1  || (/Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))){
         ifMobile();
     }
     else{
