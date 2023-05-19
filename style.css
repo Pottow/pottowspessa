@@ -98,3 +98,9 @@ body{
 }
 
 
+/* @media only screen, (hover: none), (max-width: 600px),(pointer:coarse) {
+    .pageTitle{ 
+       background-color: rgb(53, 59, 146);
+    }
+  } */
+

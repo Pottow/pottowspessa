@@ -137,13 +137,16 @@ function scaleImages(){
     RandomCimNames = document.getElementById("RandomCimNames");
     
 
-    if (document.documentElement.clientWidth < 800 || document.documentElement.clientWidth < document.documentElement.clientHeight
-        || navigator.userAgent.indexOf("Mobi") > -1  || /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+    const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 600px),(pointer:coarse)');
+
+
+    if (oneTimeMediaQuery.matches){
+        console.log("hey this looks like a phone!");
         ifMobile();
     }
     else{
         
-        // thesisWebGL.height = window.innerHeight /1.4625;
+        thesisWebGL.height = window.innerHeight /1.15;
         thesisWebGL.width = window.innerWidth /1.92;
 
         TTCTheory.height = window.innerHeight /6.4;
