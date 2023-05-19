@@ -125,6 +125,8 @@ function ifMobile(){
                     LogoGraphic.width = 35;
                     LogoGraphic.height = 35;
                 }
+
+                alert("hey this looks like a phone!");
 }
 
 function scaleImages(){
@@ -141,8 +143,6 @@ function scaleImages(){
 
 
     if (oneTimeMediaQuery.matches){
-        console.log("hey this looks like a phone!");
-        alert("hey this looks like a phone!");
         ifMobile();
     }
     else{
