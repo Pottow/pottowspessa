@@ -1,4 +1,4 @@
-
+/* mobile section */
 @media only screen and (max-width: 900px), (hover: none), (pointer:coarse) {
     body{
         background-image: url("images/backgroundTile.png"); 
@@ -126,6 +126,8 @@
     }  
 }
 
+/* desktop section */
+
 @media only screen and (min-width: 900px), not (hover: none), not (pointer:coarse){
 
 body{
@@ -199,13 +201,20 @@ body{
     grid-column-end: 9;
     width: 1fr;
     background-color: rgba(0, 0, 0, 0.308);
+    margin: auto;
     border: 2cm;
     border-radius: 5%;
     border-color: aqua;
    /*  background-color: rgb(26, 24, 37); */
 }
 
+#TTCTheory{
+    width: 80%;
+    height: auto;
+}
+
 .section_1_graphic{
+    margin-top: 1cm;
     margin-left: 0.5cm;
     grid-row-start: 2;
     grid-row-end: 5;
@@ -228,10 +237,12 @@ body{
     width: 1fr;
     background-color: rgba(0, 0, 0, 0.308);
     border-radius: 10%;
+    margin: auto;
    /*  background-color: rgb(26, 24, 37); */
 }
 
 .section_2_graphic{
+    padding-top: 1cm;
     grid-row: 10;
     grid-column-start: 2;
     grid-column-end: 10;
@@ -249,11 +260,12 @@ body{
     width: 1fr;
     background-color: rgba(0, 0, 0, 0.308);
     border-radius: 10%;
+    margin: auto;
    /*  background-color: rgb(26, 24, 37); */
 }
 
 .section_3_graphic{
-    margin-left: 1.5cm;
+    margin-left: 0.5cm;
     margin-top: 1.5cm;
     grid-row: 15;
     grid-column-start: 11;

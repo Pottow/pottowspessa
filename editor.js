@@ -67,7 +67,7 @@ function scaleImages(){
         thesisWebGL.height = window.innerHeight /1.15;
         thesisWebGL.width = window.innerWidth /1.92;
 
-        TTCTheory.height = window.innerHeight /6.4;
+        // TTCTheory.height = window.innerHeight /6.4;
         TTCTheory.width = window.innerWidth /2.5;
    
         BotressControlPanel.height = window.innerHeight /2.34;
@@ -92,3 +92,4 @@ window.onload = function(){
                 ifMobile();
                 }
 window.onresize = scaleImages;
+window.on
