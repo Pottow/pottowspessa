@@ -142,6 +142,7 @@ function scaleImages(){
 
     if (oneTimeMediaQuery.matches){
         console.log("hey this looks like a phone!");
+        alert("hey this looks like a phone!");
         ifMobile();
     }
     else{
