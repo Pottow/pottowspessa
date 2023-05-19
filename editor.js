@@ -107,9 +107,9 @@ function ifMobile(){
         
 
 
-        thesisWebGL.width = 0;
-        thesisWebGL.height = 0;
-        // thesisWebGL.remove();
+        // thesisWebGL.width = 0;
+        // thesisWebGL.height = 0;
+        thesisWebGL.remove();
 
         // TTCTheory.height = window.innerHeight /12;
         TTCTheory.width = window.innerWidth /2.5;
@@ -119,15 +119,15 @@ function ifMobile(){
     
         // BotressInVoice.height = window.innerHeight /9;
         // BotressInVoice.width = window.innerWidth /1.85;
-        BotressInVoice.height = 0;
-        BotressInVoice.width = 0;
-        // BotressInVoice.remove();
+        // BotressInVoice.height = 0;
+        // BotressInVoice.width = 0;
+        BotressInVoice.remove();
     
         // BotressOnline.height = window.innerHeight /15.6;
         // BotressOnline.width = window.innerWidth /2.06;
-        BotressOnline.height = 0;
-        BotressOnline.width = 0;
-        // BotressOnline.remove();
+        // BotressOnline.height = 0;
+        // BotressOnline.width = 0;
+        BotressOnline.remove();
     
         // RandomCimNames.height = window.innerHeight /6.5;
         RandomCimNames.width = window.innerWidth /1.11;
@@ -141,6 +141,9 @@ function ifMobile(){
 }
 
 function scaleImages(){
+
+    const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 900px),(pointer:coarse)');
+    if (!oneTimeMediaQuery.matches){
 
     thesisWebGL = document.getElementById("thesisWebGL");
     TTCTheory = document.getElementById("TTCTheory");
@@ -166,7 +169,7 @@ function scaleImages(){
    
         RandomCimNames.height = window.innerHeight /3.5;
         RandomCimNames.width = window.innerWidth /2.5;
-   
+    }
 
 }
 
