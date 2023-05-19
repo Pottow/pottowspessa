@@ -63,6 +63,8 @@ function ifMobile(){
                 $(".section_2_graphic").css("grid-row-end","6");
                 $(".section_2_graphic").css("text-align","center");
                 $(".section_2_graphic").css("display","flex");
+                $(".section_2_graphic").css("margin-left","auto");
+                $(".section_2_graphic").css("margin-right","auto");
 
                 $(".section_3_text").css("margin-left","0cm");
                 $(".section_3_text").css("grid-column-start","1");
@@ -86,6 +88,8 @@ function ifMobile(){
                 $(".section_3_graphic").css("margin","0cm");
                 $(".section_3_graphic").css("text-align","center");
                 $(".section_3_graphic").css("display","flex");
+                $(".section_3_graphic").css("margin-left","auto");
+                $(".section_3_graphic").css("margin-right","auto");
 
                 thesisWebGL = document.getElementById("thesisWebGL");
                 TTCTheory = document.getElementById("TTCTheory");
@@ -104,7 +108,7 @@ function ifMobile(){
                 TTCTheory.width = window.innerWidth /2.5;
            
                 // BotressControlPanel.height = window.innerHeight /6;
-                BotressControlPanel.width = window.innerWidth /1.0;
+                BotressControlPanel.width = window.innerWidth /1.1;
            
                 // BotressInVoice.height = window.innerHeight /9;
                 // BotressInVoice.width = window.innerWidth /1.85;
@@ -119,14 +123,13 @@ function ifMobile(){
                 // BotressOnline.remove();
            
                 // RandomCimNames.height = window.innerHeight /6.5;
-                RandomCimNames.width = window.innerWidth /1.1;
+                RandomCimNames.width = window.innerWidth /1.11;
 
                 if (window.innerWidth <= 390){
                     LogoGraphic.width = 35;
                     LogoGraphic.height = 35;
                 }
 
-                alert("hey this looks like a phone!");
 }
 
 function scaleImages(){
@@ -139,7 +142,8 @@ function scaleImages(){
     RandomCimNames = document.getElementById("RandomCimNames");
     
 
-    const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 600px),(pointer:coarse)');
+    const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 900px),(pointer:coarse)');
+    //not actually one time, will repeat on refresh/resize, but not actively listening itself
 
 
     if (oneTimeMediaQuery.matches){

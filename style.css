@@ -98,9 +98,6 @@ body{
 }
 
 
-@media only screen, (hover: none), (max-width: 600px),(pointer:coarse) {
-    .section_1_text{ 
-       background-color: rgb(9, 20, 172);
-    }
+@media only screen, (hover: none), (max-width: 900px),(pointer:coarse) {
   } 
 
