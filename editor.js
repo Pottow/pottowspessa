@@ -1,13 +1,3 @@
-
-function FirstFunction(){
-    console.log("hello world")
-    document.getElementById("executeFirstFunction").style.background = "#4CAF50";
-}
-
-function embedWebglPlease (embedWebgl){
-embedWebgl.style.height=embedWebgl.contentWindow.document.body.scrollHeight+"px";
-}
-
 function ifMobile(){
 
     const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 900px),(pointer:coarse)');
@@ -16,7 +6,7 @@ function ifMobile(){
 
     if (oneTimeMediaQuery.matches){
 
-        thesisWebGL = document.getElementById("thesisWebGL");
+        ThesisPic = document.getElementById("ThesisPic");
         TTCTheory = document.getElementById("TTCTheory");
         BotressControlPanel = document.getElementById("BotressControlPanel");
         BotressInVoice = document.getElementById("BotressInVoice");
@@ -25,10 +15,10 @@ function ifMobile(){
         LogoGraphic = document.getElementById("LogoGraphic");
         
 
-        thesisWebGL.remove();
+        ThesisPic.width = window.innerWidth /1.2;
 
         // TTCTheory.height = window.innerHeight /12;
-        TTCTheory.width = window.innerWidth /2.5;
+        TTCTheory.width = window.innerWidth /1.1;
     
         // BotressControlPanel.height = window.innerHeight /6;
         BotressControlPanel.width = window.innerWidth /1.1;
@@ -57,15 +47,15 @@ function scaleImages(){
     const oneTimeMediaQuery = window.matchMedia('(hover: none), (max-width: 900px),(pointer:coarse)');
     if (!oneTimeMediaQuery.matches){
 
-    thesisWebGL = document.getElementById("thesisWebGL");
+    ThesisPic = document.getElementById("ThesisPic");
     TTCTheory = document.getElementById("TTCTheory");
     BotressControlPanel = document.getElementById("BotressControlPanel");
     BotressInVoice = document.getElementById("BotressInVoice");
     BotressOnline = document.getElementById("BotressOnline");
     RandomCimNames = document.getElementById("RandomCimNames");
         
-        thesisWebGL.height = window.innerHeight /1.15;
-        thesisWebGL.width = window.innerWidth /1.92;
+        ThesisPic.height = window.innerHeight /1.5;
+        ThesisPic.width = window.innerWidth /1.92;
 
         // TTCTheory.height = window.innerHeight /6.4;
         TTCTheory.width = window.innerWidth /2.5;
