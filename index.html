@@ -9,32 +9,32 @@
         <link rel="icon" href="images/drizzleIcon.png" type = "image/x-icon">
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     </header>
 
 
+    
     <body>
         <bigGrid class="grid-container">
 
+          <navbarColour id = "navbarColour" class="navbarColour" >
+          </navbarColour>
 
-        <navbarColour class="navbarColour" style="border: 1px inset;">
-        </navbarColour>
+          <pageTitle class="pageTitle"> 
+            <!-- <h1>Ποττω'ς &nbsp;Πεσσά</h1>     -->
+            <img  id = "PageTitlePic" src = "images/PageTitlePic.png">
+            </pageTitle>
 
             <logo class="logo" >
-                <a href = "https://github.com/Pottow">
-                <img  id="LogoGraphic" src = "images/drizzleIcon.png">
-                </a>
+              <a href = "https://github.com/Pottow">
+              <img  id="LogoGraphic" src = "images/drizzleIcon.png">
+              </a>
             </logo>
             
-            <pageTitle class="pageTitle">            
-                    <h1>Ποττω'ς &nbsp;Πεσσά</h1>
-            </pageTitle>
-            
 
-<br>
  <!-- Header to Section 1 divider -->
 
-          
-
+        
 
             <section_1_text class="section_1_text">
                 <h2>Thesis Project</h2>               
@@ -56,10 +56,7 @@
                 linear tracks could yield different travel times, despite having equivalent difficulty values according to the Steering Law. 
                 </p>
 
-                <img  id = "TTCTheory" src = "images/TTCTheory.png" style=  "display: block;
-                margin-left: auto;
-                margin-right: auto;
-                ">
+                <img  id = "TTCTheory" src = "images/TTCTheory.png">
 
                 <p>
                 The TTC section of the experiment 
@@ -72,18 +69,21 @@
 
             <br>
             <section_1_graphic class = "section_1_graphic">
-              <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen" 
+              <!-- <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen" 
               src="https://pottow.github.io/HostingSteeringExperiment/" 
               style="border:none;overflow:hidden;"
               scrolling="yes" msallowfullscreen="true" allowfullscreen="true"    
               webkitallowfullscreen="true" allowtransparency="true" 
-              frameborder="0">
-              </iframe>
+              frameborder="0"
+              >
+              </iframe> -->
+              <a href = "https://pottow.github.io/HostingSteeringExperiment/">
+                <img  id="ThesisPic" src = "images/ThesisPic.png">
+                </a>
             </section_1_graphic>
     
     
     
-<br>
 <!-- Section 1 to 2 divider -->
 
 
@@ -98,18 +98,10 @@
 
             <br>
             <a href = "https://github.com/Pottow/Botress"  style ="text-decoration: none;">
-              <img id="BotressInVoice"  src = "images/BotressInVoice.PNG"
-              style=" grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 2;
-            grid-column-end: 2;">
+              <img id="BotressInVoice"  src = "images/BotressInVoice.PNG">
           </a> 
           <a href = "https://github.com/Pottow/Botress" style ="text-decoration: none;">
-            <img id="BotressOnline" src = "images/BotressOnline.PNG"
-            style=" grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 1;
-            grid-column-end: 1;">
+            <img id="BotressOnline" src = "images/BotressOnline.PNG">
           </a> 
 
             </section_2_text>  
@@ -117,16 +109,11 @@
             <section_2_graphic class = "section_2_graphic">
         
               <a href = "https://github.com/Pottow/Botress">
-                <img id="BotressControlPanel" src = "images/BotressControlPanel.PNG"  style=" grid-row-start: 2;
-                grid-row-end: 2;
-                grid-column-start: 1;
-                grid-column-end: 1;"
-                >
+                <img id="BotressControlPanel" src = "images/BotressControlPanel.PNG" >
               </a>     
                  
             </section_2_graphic>  
             
-<br>
 <!-- Section 2 to 3 divider -->
 
           <section_3_text class = "section_3_text">
@@ -159,14 +146,13 @@
             <section_3_graphic class = "section_3_graphic">
         
               <a href = "https://github.com/Pottow/RandomCimNames">
-                <img id="RandomCimNames" src = "images/RandomCimNames.PNG"  style=" grid-row-start: 3;
-                grid-row-end: 3;
-                grid-column-start: 1;
-                grid-column-end: 1;"
-                >
+                <img id="RandomCimNames" src = "images/RandomCimNames.PNG">
               </a>     
                  
             </section_3_graphic>  
+
+
+
 
 
             <script src="editor.js"></script>
