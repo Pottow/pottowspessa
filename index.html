@@ -1,183 +1,185 @@
 <!DOCTYPE html>
-<html lang = "en-GB">
-<!-- This is a comment-->
+<html lang="en-GB">
+<!-- ========= -->
+<!-- Header -->
+<!-- =========  -->
 
-    <header charset = "UTF-8">
-        <meta name="author" content="Pottow">
-        <meta name="description" content = "A portfolio of my projects.">
-        <meta name="viewport" content = "width= device-width, initial-scale=1">
-        <link rel="icon" href="images/drizzleIcon.png" type = "image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    </header>
+<header charset="UTF-8">
+  <meta name="author" content="Pottow">
+  <meta name="description" content="A portfolio of my projects.">
+  <meta name="viewport" content="width= device-width, initial-scale=1">
+  <link rel="icon" href="images/drizzleIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</header>
 
+<!-- ========= -->
+<!-- Body -->
+<!-- =========  -->
 
-    <body>
-        <bigGrid class="grid-container">
+<body>
+  <bigGrid class="grid-container">
 
+    <navbarColour class="navbarColour" style="border: 1px inset;">
+    </navbarColour>
 
-        <navbarColour class="navbarColour" style="border: 1px inset;">
-        </navbarColour>
+    <logo class="logo">
+      <a href="https://github.com/Pottow">
+        <img id="LogoGraphic" src="images/drizzleIconShaded.png">
+      </a>
+    </logo>
 
-            <logo class="logo" >
-                <a href = "https://github.com/Pottow">
-                <img  id="LogoGraphic" src = "images/drizzleIcon.png">
-                </a>
-            </logo>
-            
-            <pageTitle class="pageTitle">            
-                    <h1>Ποττω'ς &nbsp;Πεσσά</h1>
-            </pageTitle>
-            
-
-<br>
- <!-- Header to Section 1 divider -->
-
-          
+    <pageTitle class="pageTitle">
+      <h1>Ποττω'ς &nbsp;Πεσσά</h1>
+    </pageTitle>
 
 
-            <section_1_text class="section_1_text">
-                <h2>Thesis Project</h2>               
-               
-                <p >
-                My thesis was a driving simulation experiment made in Unity. It tested time-to-collision (TTC) theories and steering laws, when approaching gates of variable width. 
-                The time it took each participant to complete the course was modelled using Accot and Zhai's Steering Law. The changing angle between the left gatepost,
-                the driver's eyeline, and the right gatepost at each instant was used as input for David Lee's TTC theory.
-                </p>
+    <br>
 
-                <p>
-                The trial consisted of a total of fourty four very similar levels. The driver had to navigate an unruly car through a straight track. 
-                The levels could be seperated into three types, no obstacles, one gate, and five gates. To create different variations on these three
-                level types, the width of the track and gates were altered randomly in width. 
-                </p>
-
-                <p>
-                The speed, time, braking, and visual angle to the gate, at each instant, was recorded for each participant. This data allowed us to compare how similar 
-                linear tracks could yield different travel times, despite having equivalent difficulty values according to the Steering Law. 
-                </p>
-
-                <a href = https://www.researchgate.net/publication/22149996_A_Theory_of_Visual_Control_of_Braking_Based_on_Information_about_Time-to-Collision>
-                <img  id = "TTCTheory" src = "images/TTCTheory.png" style=  "display: block;
-                margin-left: auto;
-                margin-right: auto;
-                text-decoration: none;">
-                </a>
-
-                <p>
-                The TTC section of the experiment 
-                used the visual angle between the driver and the gates to assess whether people react to a gate or opening in the same way that they would react to being on
-                a collision course with a physical obstacle. The aim was to analyse whether their braking pattern when approaching the gate was comparable to the expected 
-                approach towards a physical obstacle like a wall.
-                </p>
-
-            </section_1_text>
-
-            <br>
-            <section_1_graphic class = "section_1_graphic">
-              <a href = "https://pottow.github.io/HostingSteeringExperiment/">
-              <img  id = "ThesisPic" src = "images/ThesisPic.png" style=  "display: block;">
-              </a>
-              <!-- <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen" 
-              src="https://pottow.github.io/HostingSteeringExperiment/" 
-              style="border:none;overflow:hidden;"
-              scrolling="yes" msallowfullscreen="true" allowfullscreen="true"    
-              webkitallowfullscreen="true" allowtransparency="true" 
-              frameborder="0">
-              </iframe> -->
-            </section_1_graphic>
-    
-    
-    
-<br>
-<!-- Section 1 to 2 divider -->
+    <!-- ========= -->
+    <!-- Section 1 -->
+    <!-- =========  -->
 
 
+    <section_1_text class="section_1_text">
+      <h2>Master's Thesis - University of Birmingham</h2>
 
-            <section_2_text class = "section_2_text">
-            <h2>Discord Music Bot</h2>       
-               
-            <p>
-            Botress is a bot for playing music over voice chat on Discord. It was coded in python using the discord.py API. The bot is 
-            controlled via a GUI on the host's computer. Playlists/genres can be selected from a directory and played on shuffle.
-            </p>
+      <p>
+        My thesis was a driving simulation experiment made in Unity. It tested time-to-collision (TTC) theories and
+        steering laws, when approaching gates of variable width.
+        The time it took each participant to complete the course was modelled using Accot and Zhai's Steering Law. The
+        changing angle between the left gatepost,
+        the driver's eyeline, and the right gatepost at each instant was used as input for David Lee's TTC theory.
+      </p>
 
-            <br>
-            <a href = "https://github.com/Pottow/Botress"  style ="text-decoration: none;">
-              <img id="BotressInVoice"  src = "images/BotressInVoice.PNG"
-              style=" grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 2;
-            grid-column-end: 2;">
-          </a> 
-          <a href = "https://github.com/Pottow/Botress" style ="text-decoration: none;">
-            <img id="BotressOnline" src = "images/BotressOnline.PNG"
-            style=" grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 1;
-            grid-column-end: 1;">
-          </a> 
+      <p>
+        The trial consisted of a total of fourty four very similar levels. The driver had to navigate an unruly car
+        through a straight track.
+        The levels could be seperated into three types, no obstacles, one gate, and five gates. To create different
+        variations on these three
+        level types, the width of the track and gates were altered randomly in width.
+      </p>
 
-            </section_2_text>  
+      <p>
+        The speed, time, braking, and visual angle to the gate, at each instant, was recorded for each participant. This
+        data allowed us to compare how similar
+        linear tracks could yield different travel times, despite having equivalent difficulty values according to the
+        Steering Law.
+      </p>
 
-            <section_2_graphic class = "section_2_graphic">
-        
-              <a href = "https://github.com/Pottow/Botress">
-                <img id="BotressControlPanel" src = "images/BotressControlPanel.PNG"  style=" grid-row-start: 2;
-                grid-row-end: 2;
-                grid-column-start: 1;
-                grid-column-end: 1;"
-                >
-              </a>     
-                 
-            </section_2_graphic>  
-            
-<br>
-<!-- Section 2 to 3 divider -->
+      <a
+        href=https://www.researchgate.net/publication/22149996_A_Theory_of_Visual_Control_of_Braking_Based_on_Information_about_Time-to-Collision>
+        <img id="TTCTheoryEyeball" src="images/TTCTheory.png">
+      </a>
 
-          <section_3_text class = "section_3_text">
-            <h2>Random Name Generator</h2>       
-               
-            <p>
-            RandomCimNames is a unique name generator, coded in Go. Rather than using existing names, it instead creates a name and surname by applying an 
-            onomastic ruleset to words imported from a dictionary. At some point in the future, I would like to use a machine learning algorithm to tune the 
-            quality of names or cater them towards specific genres, such as fantasy or sci-fi.
-            </p>
-            <p id="ExampleNamesListIntro">
-              Example names include: 
-              <ul id="ExampleNamesList">
-                <li>Welki Muckspreader</li>
-                <li>Undicid Joint</li>
-                <li>Traun Aftabo</li>
-                <li>Lyricei Symcons</li>
-                <li>Insuing Bubble</li>
-                <li>Winny Reuson</li>
-                <li>Brafatt Faipill</li>
-                <li>Leahe Nonheeha</li>
-                <li>Ultril Tomb</li>
-              </ul>
-      
-            </p>
+      <p>
+        The TTC section of the experiment
+        used the visual angle between the driver and the gates to assess whether people react to a gate or opening in
+        the same way that they would react to being on
+        a collision course with a physical obstacle. The aim was to analyse whether their braking pattern when
+        approaching the gate was comparable to the expected
+        approach towards a physical obstacle like a wall.
+      </p>
 
-            </section_3_text>  
+    </section_1_text>
+
+    <br>
+    <section_1_graphic class="section_1_graphic">
+      <a href="https://pottow.github.io/HostingSteeringExperiment/">
+        <img id="ThesisPic" src="images/ThesisPic.png">
+      </a>
+      <!-- Previously the steering experiment could be run from an iframe - this is now a hyperlink -->
+      <!-- <iframe id = "thesisWebGL" name="Thesis WebGL" mozallowfullscreen="true" allow="autoplay; fullscreen" 
+    src="https://pottow.github.io/HostingSteeringExperiment/" 
+    style="border:none;overflow:hidden;"
+    scrolling="yes" msallowfullscreen="true" allowfullscreen="true"    
+    webkitallowfullscreen="true" allowtransparency="true" 
+    frameborder="0">
+    </iframe> -->
+    </section_1_graphic>
+    <br>
 
 
-            <section_3_graphic class = "section_3_graphic">
-        
-              <a href = "https://github.com/Pottow/RandomCimNames">
-                <img id="RandomCimNames" src = "images/RandomCimNames.PNG"  style=" grid-row-start: 3;
-                grid-row-end: 3;
-                grid-column-start: 1;
-                grid-column-end: 1;"
-                >
-              </a>     
-                 
-            </section_3_graphic>  
+    <!-- ========= -->
+    <!-- Section 2 -->
+    <!-- =========  -->
+
+    <section_2_text class="section_2_text">
+      <h2>Discord Music Bot</h2>
+
+      <p>
+        Botress is a bot for playing music over voice chat on Discord. It was coded in Python using the discord.py API
+        for integration with Discord. The bot is
+        controlled via a GUI on the host's computer. Playlists/genres can be selected from a directory and played on
+        shuffle.
+      </p>
+
+      <br>
+      <a href="https://github.com/Pottow/Botress" style="text-decoration: none;">
+        <img id="BotressInVoice" src="images/BotressInVoice.PNG" style=" grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;">
+      </a>
+      <a href="https://github.com/Pottow/Botress" style="text-decoration: none;">
+        <img id="BotressOnline" src="images/BotressOnline.PNG">
+      </a>
+
+    </section_2_text>
+
+    <section_2_graphic class="section_2_graphic">
+
+      <a href="https://github.com/Pottow/Botress">
+        <img id="BotressControlPanel" src="images/BotressControlPanel.PNG">
+      </a>
+
+    </section_2_graphic>
+
+    <br>
+
+    <!-- ========= -->
+    <!-- Section 3 -->
+    <!-- =========  -->
+
+    <section_3_text class="section_3_text">
+      <h2>Random Name Generator</h2>
+
+      <p>
+        RandomCimNames is a unique name generator, coded in Go. Rather than using existing names, it instead creates a
+        name and surname by applying an
+        onomastic ruleset to words imported from a dictionary.
+      </p>
+      <p id="ExampleNamesListIntro">
+        Example names include:
+      <ul id="ExampleNamesList">
+        <li>Welki Muckspreader</li>
+        <li>Undicid Joint</li>
+        <li>Traun Aftabo</li>
+        <li>Lyricei Symcons</li>
+        <li>Insuing Bubble</li>
+        <li>Winny Reuson</li>
+        <li>Brafatt Faipill</li>
+        <li>Leahe Nonheeha</li>
+        <li>Ultril Tomb</li>
+      </ul>
+
+      </p>
+
+    </section_3_text>
 
 
-            <script src="editor.js"></script>
-        </bigGrid>
+    <section_3_graphic class="section_3_graphic">
 
-    </body>
+      <a href="https://github.com/Pottow/RandomCimNames">
+        <img id="RandomCimNames" src="images/RandomCimNames.PNG">
+      </a>
+    </section_3_graphic>
+
+
+    <script src="editor.js"></script>
+  </bigGrid>
+
+</body>
 
 
 </html>
