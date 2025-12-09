@@ -1,4 +1,4 @@
-const mobileMediaQuery = window.matchMedia('(hover: none), (max-width: 900px),(pointer:coarse)');
+import { isMobile } from './bool-check.js';
 
 function ifMobile() {
 
@@ -6,7 +6,7 @@ function ifMobile() {
     //not actually one time, will repeat on refresh/resize, but not actively listening itself
 
 
-    if (mobileMediaQuery.matches) {
+    if (isMobile()) {
 
         ThesisPic = document.getElementById("ThesisPic");
         TTCTheory = document.getElementById("TTCTheoryEyeball");
@@ -46,7 +46,7 @@ function ifMobile() {
 
 function scaleImages() {
 
-    if (!mobileMediaQuery.matches) {
+    if (!isMobile()) {
 
         ThesisPic = document.getElementById("ThesisPic");
         TTCTheory = document.getElementById("TTCTheoryEyeball");
@@ -75,8 +75,8 @@ function scaleImages() {
     }
 }
 
-
 window.onload = function () {
+    console.log("load");
     scaleImages();
     ifMobile();
 }
