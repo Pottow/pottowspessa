@@ -1,5 +1,3 @@
-import { isMobile } from './bool-check.js';
-
 function ifMobile() {
 
 
@@ -19,7 +17,7 @@ function ifMobile() {
 
         ThesisPic.width = window.innerWidth / 1.2;
 
-        // TTCTheory.height = window.innerHeight /12;
+        TTCTheory.height = window.innerHeight /12;
         TTCTheory.width = window.innerWidth / 1.1;
 
         // BotressControlPanel.height = window.innerHeight /6;
